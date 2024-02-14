@@ -30,9 +30,7 @@ const Navbar = ({setSidebar}) => {
             <img src={profile_icon} className='user_icon' alt="" />
         </div>
     </nav>
-    <div className='loading_bar'>
-
-    </div>
+   
     </>
   )
 }

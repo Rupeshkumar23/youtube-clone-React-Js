@@ -6,6 +6,7 @@ import './Home.css'
 // eslint-disable-next-line react/prop-types
 const Home = ({sidebar}) => {
   const [category,setCategory]=useState(0);
+  
   return (
     <>
     <Sidebar sidebar={sidebar} category={category} setCategory={setCategory}/>

@@ -16,6 +16,7 @@ import cameron from '../../assets/cameron.png'
 
 // eslint-disable-next-line react/prop-types
 const Sidebar = ({sidebar,category,setCategory}) => {
+    
   return (
     <div className={`sidebar ${sidebar?"":"small_sidebar"}`}>
         <div className="shortcut_links">
