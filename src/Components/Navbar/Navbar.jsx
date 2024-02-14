@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom'
 // eslint-disable-next-line react/prop-types
 const Navbar = ({setSidebar}) => {
   return (
+    <>
     <nav className='flex_div'>
         <div className='nav_left flex_div'>
             <img className='menu_icon' onClick={()=>setSidebar(prev=>prev===false?true:false)} src={menu_icon} alt='menuIcon'/>
@@ -29,6 +30,10 @@ const Navbar = ({setSidebar}) => {
             <img src={profile_icon} className='user_icon' alt="" />
         </div>
     </nav>
+    <div className='loading_bar'>
+
+    </div>
+    </>
   )
 }
 
