@@ -5,11 +5,12 @@ import Video from "./Pages/Video/Video"
 import { useState } from "react"
 
 const App = () => {
-  const[sidebar,setSidebar] =useState(true)
+  const[sidebar,setSidebar] =useState(true);
+  
   return (
     <div>
       <Navbar setSidebar={setSidebar}/>
-      <div className="loader"style={{display:"none"}}></div> 
+      <div className="loader"></div> 
       <Routes>
         <Route path="/" element={<Home sidebar={sidebar} />}/>
         <Route path="/video/:categoryId/:videoId" element={<Video/>}/>
